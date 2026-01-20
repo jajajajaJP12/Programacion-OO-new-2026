@@ -1,4 +1,4 @@
-package edu.jorge.pardo.actividad1.process;
+package edu.jorge.pardo.demo.process;
 
 public class Switch {
     private boolean isOn;

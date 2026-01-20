@@ -1,6 +1,6 @@
-package edu.jorge.pardo.actividad1;
+package edu.jorge.pardo.demo;
 
-import edu.jorge.pardo.actividad1.ui.CLI;
+import edu.jorge.pardo.demo.ui.CLI;
 
 public class Main {
 
