@@ -1,0 +1,9 @@
+package edu.jorge.pardo.V2.process;
+
+public class Suma extends Operacion{
+
+    @Override
+    public int apply(int a, int b) {
+        return a + b;
+    }
+}
