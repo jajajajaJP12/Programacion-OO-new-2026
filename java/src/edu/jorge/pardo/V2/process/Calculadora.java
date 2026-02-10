@@ -1,8 +1,5 @@
 package edu.jorge.pardo.V2.process;
 
-import edu.jorge.pardo.actividad2.process.*;
-import edu.jorge.pardo.actividad2.process.Modulo;
-
 public class Calculadora {
 
     public Operacion operacion;

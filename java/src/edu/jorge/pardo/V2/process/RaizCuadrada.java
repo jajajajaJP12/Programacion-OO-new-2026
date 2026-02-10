@@ -1,23 +1,9 @@
 package edu.jorge.pardo.V2.process;
 
-import edu.jorge.pardo.actividad2.process.Potencia;
-import edu.jorge.pardo.actividad2.process.Suma;
-
-public class RaizCuadrada{
-
-    public static int realizarOperacion(int indice, int operando) {
-        if (indice != 2) throw new IllegalArgumentException("Solo se admite raíz cuadrada (indice = 2).");
-        if (operando < 0) throw new IllegalArgumentException("No se admite raíz de número negativo en enteros.");
-
-        int x = 0;
-        while (true) {
-            int siguiente = Suma.realizarOperacion(x, 1);
-            int pot = Potencia.realizarOperacion(siguiente, 2);
-
-            if (pot > operando) {
-                return x; // x es la raíz entera positiva
-            }
-            x = siguiente;
-        }
+public class RaizCuadrada extends Operacion {
+    @Override
+    public int apply(int a, int b) {
+        if (a < 0) throw new ArithmeticException("No existe raíz real de un negativo");
+        return (int) Math.sqrt(a);
     }
 }
